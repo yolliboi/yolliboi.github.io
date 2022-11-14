@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Player Input</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+	background-image: url("background.jpg");
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      
+      .dropdown .dropbtn {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+      
+      .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: #6BBCD5;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+p {text-align: center;
+      background-color: lightgrey;
+
+      border: 15px solid black;
+      padding: 10px;
+      margin: 20px;
+      }
+      h1 {text-align: center;}
+</style>
+</head>
+<body>
+<h1> Player Finder Player Input</h1>
+<div class="navbar">
+  <a class="active href" href="index.html">Homepage</a>
+  <a href="PlayerFinder.html">Player Finder</a>
+  <div class="dropdown">
+    <button class="dropbtn">Overwatch 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="OW2.html">
+          <img src="Overwatch2.jpg" title="Beverly Hills, Los Angeles CAL" width="500" height="400">
+      </a>
+      
+    </div>
+  </div> 
+  <div class="dropdown">
+      <button class="dropbtn">Apex Legends 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Apex.html">
+            <img src="Apex.jpg" title="Beverly Hills, Los Angeles CAL" width="500" height="400">
+        </a>
+        
+      </div>
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn" href="CSGO.html">CSGO
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="CSGO.html">
+            <img src="CSGO.png" title="Beverly Hills, Los Angeles CAL" width="500" height="400">
+        </a>
+        
+      </div>
+    </div> 
+</div>
+
+<p><b> Insert your information here so you can find some friends  </b></p>
+<form>
+    <label for="Gtag"> Gamer Tag:</label><br>
+    <input type="text" id="Gtag" name="Gtag" value=""><br>
+    <label for="Country"> Country:</label><br>
+    <input type="text" id="Country" name="Country" value=""><br>
+    <label for="Rank"> Rank:</label><br>
+    <input type="text" id="Rank" name="Rank" value=""><br>
+    <label for="game"> Choose Game:</label><br>
+    <select id="game" name="game">
+        <option value="ow2">Overwatch 2</option>
+        <option value="cs">CS:GO</option>
+        <option value="apex">Apex</option>
+    </select><br>
+    <label for="time"> What time zone are you in?</label><br>
+    <select id="time" name="time">
+        <option value="PT">Pacific</option>
+        <option value="ET">Eastern</option>
+        <option value="CT">Central</option>
+        <option value="AT">Atlantic</option>
+        <option value="NT">NFLD</option>
+        <option value="MT">Mountain</option>
+    </select></br>
+    <label for="time"> What time of day do you play?</label><br>
+    <select id="tod" name="tod">
+        <option value="morn">Morning</option>
+        <option value="midd">Mid-Day</option>
+        <option value="eve">Evening</option>
+        <option value="owl">Night-Owl</option>
+        <option value="nos">Don't Sleep</option>
+    </select>
+    <input type="submit" >
+</form>
+<footer>
+	<p> Prestented to you by: Zachary Welten, Joel Batrsch, Steven Fiebelkorn, Joshua Day</p>
+</footer>
+</body>
+</html>
