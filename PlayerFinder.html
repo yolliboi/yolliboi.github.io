@@ -77,6 +77,10 @@ p {text-align: center;
       margin: 20px;
       }
       h1 {text-align: center;}
+.form-center {
+  display:flex;
+  justify-content: center;
+}
 </style>
 </head>
 <body>
@@ -120,20 +124,21 @@ p {text-align: center;
 </div>
 
 <p><b> Insert your information here so you can find some friends  </b></p>
+<div class="form-center">
 <form>
-    <label for="Gtag"> Gamer Tag:</label><br>
-    <input type="text" id="Gtag" name="Gtag" value=""><br>
-    <label for="Country"> Country:</label><br>
-    <input type="text" id="Country" name="Country" value=""><br>
-    <label for="Rank"> Rank:</label><br>
-    <input type="text" id="Rank" name="Rank" value=""><br>
-    <label for="game"> Choose Game:</label><br>
+    <label for="Gtag"> <b>Gamer Tag:</b></label><br>
+    <input type="text" id="Gtag" name="Gtag" placeholder="Your Gamer Tag" value=""><br>
+    <label for="Country"> <b>Country:</b></label><br>
+    <input type="text" id="Country" name="Country" placeholder="Your Country" value=""><br>
+    <label for="Rank"> <b>Rank:</b></label><br>
+    <input type="text" id="Rank" name="Rank" placeholder="Enter Rank"value=""><br>
+    <label for="game"> <b>Choose Game:</b></label><br>
     <select id="game" name="game">
         <option value="ow2">Overwatch 2</option>
         <option value="cs">CS:GO</option>
         <option value="apex">Apex</option>
     </select><br>
-    <label for="time"> What time zone are you in?</label><br>
+    <label for="time"> <b>What time zone are you in?</b></label><br>
     <select id="time" name="time">
         <option value="PT">Pacific</option>
         <option value="ET">Eastern</option>
@@ -142,7 +147,7 @@ p {text-align: center;
         <option value="NT">NFLD</option>
         <option value="MT">Mountain</option>
     </select></br>
-    <label for="time"> What time of day do you play?</label><br>
+    <label for="time"> <b>What time of day do you play?</b></label><br>
     <select id="tod" name="tod">
         <option value="morn">Morning</option>
         <option value="midd">Mid-Day</option>
@@ -152,6 +157,7 @@ p {text-align: center;
     </select>
     <input type="submit" >
 </form>
+</div>
 <footer>
 	<p> Prestented to you by: Zachary Welten, Joel Batrsch, Steven Fiebelkorn, Joshua Day</p>
 </footer>
