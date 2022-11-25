@@ -81,6 +81,11 @@ p {text-align: center;
   display:flex;
   justify-content: center;
 }
+.speechButtons {
+        background-color:dimgrey;
+        text-align: center;
+        color:white;
+      }
 </style>
 </head>
 <body>
@@ -123,7 +128,7 @@ p {text-align: center;
     </div> 
 </div>
 
-<p><b> Insert your information here so you can find some friends  </b></p>
+<p><b>Insert your information here so you can find some friends</b><br><button class="speechButtons" type="button" onclick="textToSpeach1();">Text-to-Speech</button></p>
 <div class="form-center">
 <form action="https://webdevbasics.net/scripts/demo.php" method="post">
     <label for="Gtag"> <b>Gamer Tag:</b></label><br>
@@ -161,6 +166,13 @@ p {text-align: center;
 <footer>
 	<p> Prestented to you by: Zachary Welten, Joel Batrsch, Steven Fiebelkorn, Joshua Day</p>
 </footer>
+<script>
+    function textToSpeach1(){
+    var speech = new SpeechSynthesisUtterance();
+    speech.text = "Insert your information here so you can find some friends";
+    window.speechSynthesis.speak(speech);
+}
+</script>
 </body>
 </html>
 <!--//background image source https://www.etsy.com/dk-en/listing/748231581/gaming-pattern-seamless-video-game-->
