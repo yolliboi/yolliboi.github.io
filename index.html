@@ -82,6 +82,13 @@ p {text-align: center;
       margin: 20px;
       }
       h1 {text-align: center;}
+
+      .speechButtons {
+        background-color:dimgrey;
+        text-align: center;
+        color:white;
+      }
+      
       </style>
       </head>
       <body>
@@ -123,12 +130,25 @@ p {text-align: center;
             </div>
           </div> 
       </div>
-     <p><b> This is a tool to help players find new friends to game with. There are lots of options for games out there and not everyone has the social networking to find friends to play with. we are here to fix that! By filling out our form on The Player info page we can show you other players looking for people to play with at certain times and certain countries!</b></p>
-	 <img src="friend.gif" alt="cracking a cold one" class="center">
-	 <p><b> Good Luck on your gaming journey and we hope that your new friends will help you on that path!</b></p>
+     <p><b> This is a tool to help players find new friends to game with. There are lots of options for games out there and not everyone has the social networking to find friends to play with. we are here to fix that! By filling out our form on The Player info page we can show you other players looking for people to play with at certain times and certain countries!</b><button class="speechButtons" type="button" onclick="textToSpeach1();">Text-to-Speech</button></p>
+
+     <img src="friend.gif" alt="cracking a cold one" class="center">
+	 <p><b> Good Luck on your gaming journey and we hope that your new friends will help you on that path!</b><br><button class="speechButtons" type="button" onclick="textToSpeach2();">Text-to-Speech</button></p>
 	 <footer>
 	<p> Prestented to you by: Zachary Welten, Joel Bartsch, Steven Fiebelkorn, Joshua Day</p>
 </footer>
+    <script>
+        function textToSpeach1(){
+            var speech = new SpeechSynthesisUtterance();
+            speech.text = "This is a tool to help players find new friends to game with. There are lots of options for games out there and not everyone has the social networking to find friends to play with. we are here to fix that! By filling out our form on The Player info page we can show you other players looking for people to play with at certain times and certain countries!";
+            window.speechSynthesis.speak(speech);
+        }
+        function textToSpeach2(){
+            var speech = new SpeechSynthesisUtterance();
+            speech.text = "Good Luck on your gaming journey and we hope that your new friends will help you on that path!";
+            window.speechSynthesis.speak(speech);
+        }
+    </script>
 	</body>
 </html>
 <!--//Gif image source https://gifer.com/en/KSRh //background image source https://www.etsy.com/dk-en/listing/748231581/gaming-pattern-seamless-video-game-->
